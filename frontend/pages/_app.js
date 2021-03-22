@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/Head'
 import Layout from '../components/Layout'
+import withData from '../lib/apollo'
 
 const MyApp = ({ Component, pageProps }) =>  (
   <>
@@ -18,4 +19,4 @@ const MyApp = ({ Component, pageProps }) =>  (
   </>
 )
 
-export default MyApp
+export default withData(MyApp)
